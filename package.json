@@ -1,0 +1,22 @@
+{
+  "name": "next_react_typescript_study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/semonec/next_react_typescript_study.git",
+  "license": "MIT",
+  "dependencies": {
+    "@types/next": "^8.0.6",
+    "@types/react": "^16.9.9",
+    "next": "^9.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "dev": "next"
+  }
+}
