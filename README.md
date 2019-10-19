@@ -30,44 +30,25 @@ yarn add next react react-dom typescript
 
 ## Create configuration file
 
-Create <b>`next.config.js`</b> in the project
+~~Create <b>`next.config.js`</b> in the project~~
 
-<pre><code>// next.config.js
-const withTypescript = require('@zeit/next-typescript')
-module.exports = withTypescript()
-</code></pre>
+~~Create <b>`.babelrc`</b> in the project~~
 
-Create <b>`.babelrc`</b> in the project
+~~Create <b>`tsconfig.json`</b> in the project~~
 
-<pre><code>{
-  "presets": ["next/babel", "@zeit/next-typescript/babel"]
-}
-</code></pre>
-
-Create <b>`tsconfig.json`</b> in the project
-
-<pre><code>{
-  "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "jsx": "preserve",
-    "lib": ["dom", "es2017"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "esnext"
-  }
-}
-</code></pre>
+> From Next 9, Typescript supported default, so not needed any configuration
+> `tsconfig.json` will be created by default.
 
 Add a `scripts` property to the `package.json` file.
+
+~~~
+{
+  ...
+  "scripts": {
+    "dev": "next"
+  }
+}
+~~~
 
 > Include` a script to run a local server` for development
 
